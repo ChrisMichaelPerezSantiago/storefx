@@ -1,0 +1,45 @@
+{
+  "name": "storefx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest --coverage --config jest.config.js",
+    "test:watch": "jest --watchAll --config jest.config.js"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Chris Michael",
+    "email": "chrisperezsantiago1@gmail.com",
+    "url": "http://personal-porfolio.chrismichael.now.sh",
+    "social": {
+      "github": "https://github.com/ChrisMichaelPerezSantiago",
+      "twitter": "https://twitter.com/Chris5855M"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Chris Michael",
+      "url": "https://github.com/ChrisMichaelPerezSantiago",
+      "reason": "Project Leader, and Developer"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/ChrisMichaelPerezSantiago/store/storefx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChrisMichaelPerezSantiago/storefx.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^25.1.0"
+  },
+  "dependencies": {
+    "vue": "^3.0.0-alpha.1",
+    "vuex": "^3.1.2"
+  }
+}
