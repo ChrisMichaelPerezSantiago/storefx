@@ -40,4 +40,24 @@ test('getters' , () =>{
   expect(store.getters['triple']).toBe(3);
   store.commit('INCREMENT' , 1);
   expect(store.getters['triple']).toBe(6)
-})
+});
+
+// Nested state with modules eg. 2 levels
+test('Nested state with modules' , () =>{
+  const store = new StoreFX.Store({
+    state:{},
+    modules:{
+      one:{         // -> Level #1
+        state:{},
+        modules:{
+          two:{     // -> Level #2
+            state:{
+              name: 'This state is part of level 2'
+            },
+          }
+        }
+      }
+    }
+  });
+  expect(store.state.one.two.name).toBe('This state is part of level 2');
+});
