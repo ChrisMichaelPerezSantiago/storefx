@@ -22,7 +22,7 @@ class Store{
       const {getters} = options;
       for(const [handle , fn] of Object.entries(getters)){
         Object.defineProperty(this.getters , handle , {
-          get: () => computed(() => fn(this.state)).value, 
+          get: () => computed(() => fn(this.state)).value,
           enumerable: true
         });
       }
@@ -30,9 +30,13 @@ class Store{
   }
 
   commit(handle , payload){
-    this.mutations[handle](this.state , payload);
+    const mutation = this.mutations[handle];
+    if(!mutation){
+      throw Error(`[storefx]: ${handle} is not defined.`);
+    }
+    mutation(this.state , payload);
   }
-  
+
   dispatch(handle , payload){
     //const call = this.actions[handle](this , payload);
     //if (!call || !call.then) {
