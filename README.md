@@ -1,29 +1,30 @@
-<img src="./assets/img/storefx.png" style="display: block; margin-left: auto; margin-right: auto; ">
-
-[![Build Status](https://travis-ci.com/ChrisMichaelPerezSantiago/storefx.svg?branch=master)](https://travis-ci.com/ChrisMichaelPerezSantiago/storefx)
-<a href="https://github.com/ChrisMichaelPerezSantiago/animeflv/blob/master/LICENSE">
- <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-blue.svg" target="_blank" />
-</a>
-<img src="https://img.shields.io/github/stars/ChrisMichaelPerezSantiago/storefx?style=social" alt="">
-
-
-<h2 align="center">Supporting Storefx</h2>
-
-Storefx is an ambitious MIT licensed open source project with continuous development. If you want to support go to the following links
+<p align="center">
+  <img src="./assets/img/storefx.png" style="display: block; margin-left: auto; margin-right: auto; ">
+</p>
 
 
 
-- [Become a backer on Patreon.](https://www.patreon.com/chrismperez)
-- [One-time donation via PayPal.](https://www.paypal.me/chrismperezsantiago?locale.x=en_US)
+<p align="center">
+  <img src="https://img.shields.io/badge/License-MIT-blue.svg" target="_blank" />
+    <img src="https://img.shields.io/badge/JS-Library-blue.svg" target="_blank" />  
+  <img src="https://img.shields.io/badge/Storefx-State/Management-blue.svg" target="_blank" />  
+</p>
 
 
-## Patreon
-All funds donated through Patreon go directly to support the full-time work of Chris Michael. Your help will be more than received. In turn you will be recognized as a backers part of the project.
+  [![Build Status](https://travis-ci.com/ChrisMichaelPerezSantiago/storefx.svg?branch=master)](https://travis-ci.com/ChrisMichaelPerezSantiago/storefx) 
 
 
 
-## ⚠️ Recent started development ⚠️
-*More information in the coming months*
+## <img src="https://img.icons8.com/color/48/000000/paypal.png"> **Donations**
+Storefx is an open source project licensed by MIT with continuous development. If you want me to continue maintaining this library and you are interested in continuing to use it, you can help me with a monetary help in the following link:
+
+
+- [One-time donation via PayPal.](https://paypal.me/chrismperezsantiago?locale.x=en_US)
+
+<a href="https://www.buymeacoffee.com/chrismichael" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
+
+These are projects that take a lot of effort and time to maintain. So with your help I will be more motivated to continue maintaining the Storefx project.
+
 
 
 ## **:handshake: Contributing**
