@@ -2,6 +2,9 @@
   <img src="./assets/img/storefx.png" style="display: block; margin-left: auto; margin-right: auto; ">
 </p>
 
+<p align="center">
+Storefx is a state management pattern based on the singleton architecture that allows us to have centralized and accessible data in any component within the application but without being able to be modified without some control. Inspired by the vue state management library
+</p>
 
 
 <p align="center">
@@ -13,6 +16,82 @@
 
   [![Build Status](https://travis-ci.com/ChrisMichaelPerezSantiago/storefx.svg?branch=master)](https://travis-ci.com/ChrisMichaelPerezSantiago/storefx) 
 
+
+
+Project In Development ...
+
+
+# Store structure
+
+The Store is an instance of the `StoreFX.Store` object, which consists of four objects. The four objects are the `state`, `actions`, `mutations` and `getters`.
+
+```js
+import {state} from './state';
+import {actions} from './actions';
+import {mutations} from './mutations';
+import {getters} from './getters'; 
+
+export default new Vuex.Store({
+  state,
+  mutations,
+  actions,
+  getters
+});
+```
+
+
+
+## state.js
+The `state` is an object that contains the state of the application data.
+
+```js
+export const state = {
+  data: [],
+  isLoading: true
+};
+
+```
+
+## mutations.js
+`Mutations` is also an object that contains methods that affect the state and only care to control the states, to manipulate it.
+
+A mutation may have two arguments as state and payload:
+- [x] **State** has the current state of an application.
+- [x] **Payload** is an optional one, which will give the data to mutate.
+
+```js
+ export const mutations = {
+   SET_DATA(state , payload){
+     state.data = payload;  
+   },
+   IS_LOADING(state , payload){
+     state.isLoading = payload;
+   }
+ };
+```
+
+## actions.js
+`Actions` are methods used to cause mutations and execute asynchronous code. Responsible for preparing everything necessary for a mutation to confirm a change in the state.
+
+The actions expect a promise to be resolved, hence we make a return of the promise that returns axios. When axios returns the data, we can execute commits with the type of mutation that we want to carry out. Instead of mutating the state, actions commit mutations, in this case, using the mutator SET_DATA. And the mutator IS_LOADING that will help to know if there is still data to load.
+
+
+## getters.js
+`Getters` contain the methods used to abstract access to the state and to do some preprocessing tasks, if necessary (data calculation, filtering, etc …).
+
+- [x] **Getters** will receive the state as their 1st argument
+
+```js
+const _ = require('lodash');
+
+export const getters = {
+  FILTER_SPESIFIC_DATA: (state) =>{
+    return _.filter(state.data , (data) =>{
+      // ....
+    });
+  }
+};
+```
 
 
 ## <img src="https://img.icons8.com/color/48/000000/paypal.png"> **Donations**
